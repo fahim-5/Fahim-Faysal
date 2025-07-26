@@ -436,35 +436,6 @@
     }
   }
   
-  @media (max-width: 768px) {
-    .intro h1 {
-      font-size: 48px;
-    }
-    .stats {
-      flex-wrap: wrap;
-    }
-    .statItem {
-      min-width: calc(50% - 12px);
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .intro h1 {
-      font-size: 36px;
-    }
-    .stats {
-      flex-direction: column;
-    }
-    .statItem {
-      width: 100%;
-    }
-    .heroImage {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 1/1;
-    }
-  }
- 
   
 
      /* get in touch */
@@ -712,48 +683,6 @@
     background: var(--accent-color);
   }
   
-  /* Responsive */
-  @media (max-width: 992px) {
-    .about-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    
-    .about-left {
-      margin-bottom: 40px;
-    }
-    
-    .about-title::after {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    
-    .about-description {
-      text-align: left;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .about-image {
-      width: 250px;
-      height: 250px;
-    }
-    
-    .about-socials a {
-      width: 45px;
-      height: 45px;
-    }
-  }
-
-
-
-
-
-
-
-
-
 
 
 /* Education Section - Matching React Styles */
@@ -910,30 +839,7 @@
     75% { transform: translateY(-15px) translateX(15px); }
   }
   
-  /* Responsive styles */
-  @media (max-width: 992px) {
-    .education-container {
-      padding: 0 20px;
-    }
   
-    .education-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .section-title {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
-  
-    .section-title::after {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
   
   :root {
   --primary-color: #4a6bff;
@@ -1064,32 +970,6 @@ body {
   margin-top: 4px;
 }
 
-/* Responsive styles */
-@media (max-width: 992px) {
-  .experience-container {
-    padding: 0 16px;
-  }
-  .experience-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-}
-
-@media (max-width: 576px) {
-  .section-title {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-  .section-title::after {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .experience-card {
-    padding: 22px 12px 18px 12px;
-  }
-}
 
 
   /* skil section */
@@ -1273,27 +1153,6 @@ body {
 .advanced { width: 80%; }
 .expert, .native { width: 100%; }
 
-/* Responsive styles */
-@media (max-width: 900px) {
-  .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 18px;
-  }
-}
-@media (max-width: 600px) {
-  .skills-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-  .skills-section {
-    padding: 40px 0;
-  }
-}
-@media (max-width: 400px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* Skills Section Enhancements */
 .skills-tabs {
@@ -1804,38 +1663,5 @@ body {
     text-decoration: underline;
   }
   
-  @media (max-width: 576px) {
-    footer .container {
-      flex-direction: column;
-      gap: 10px;
-    }
-  }
   
 
-
-  
-  /* Responsive Design -----------------------------------------------------------------------------------*/
-  @media (max-width: 768px) {
-    .home-container, .about-container {
-      flex-direction: column;
-    }
-    
-    .home-left, .home-right, .about-left, .about-right {
-      flex: 1 1 100%;
-      max-width: 100%;
-      text-align: center;
-    }
-    
-    .stats {
-      justify-content: center;
-    }
-    
-    .navbar-container {
-      flex-direction: column;
-      gap: 15px;
-    }
-    
-    .nav-links {
-      justify-content: center;
-    }
-  }
