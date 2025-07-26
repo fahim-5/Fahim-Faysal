@@ -219,21 +219,19 @@
     <section id="skills" class="skills-section">
       <div class="skills-container">
         <h2 class="section-title">Skills & Expertise</h2>
-        <p class="section-subtitle">
-          Combining technical proficiency with strong interpersonal skills to
-          deliver comprehensive solutions.
-        </p>
-
         <div class="skills-tabs">
-          <button class="tab-button active">Technical</button>
-          <button class="tab-button">Soft Skills</button>
-          <button class="tab-button">Languages</button>
+          <button class="tab-button active" data-filter="all">
+            All Skills
+          </button>
+          <button class="tab-button" data-filter="technical">Technical</button>
+          <button class="tab-button" data-filter="soft">Soft Skills</button>
+          <button class="tab-button" data-filter="language">Languages</button>
         </div>
 
         <div class="skills-grid">
-          <!-- Skill Card -->
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-star"></i></div>
+          <!-- Technical Skills -->
+          <div class="skill-card" data-category="technical">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
             <h4>C</h4>
             <div class="skill-level">
               <div class="bar intermediate"></div>
@@ -241,8 +239,8 @@
             <p>Intermediate</p>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-star"></i></div>
+          <div class="skill-card" data-category="technical">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
             <h4>C++</h4>
             <div class="skill-level">
               <div class="bar intermediate"></div>
@@ -250,8 +248,8 @@
             <p>Intermediate</p>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <div class="skill-card" data-category="technical">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
             <h4>CSS</h4>
             <div class="skill-level">
               <div class="bar advanced"></div>
@@ -259,8 +257,8 @@
             <p>Advanced</p>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-star"></i></div>
+          <div class="skill-card" data-category="technical">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
             <h4>Express.js</h4>
             <div class="skill-level">
               <div class="bar intermediate"></div>
@@ -268,8 +266,8 @@
             <p>Intermediate</p>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <div class="skill-card" data-category="technical">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
             <h4>HTML</h4>
             <div class="skill-level">
               <div class="bar advanced"></div>
@@ -277,8 +275,8 @@
             <p>Advanced</p>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-language"></i></div>
+          <div class="skill-card" data-category="technical">
+            <div class="skill-icon"><i class="fab fa-java"></i></div>
             <h4>Java</h4>
             <div class="skill-level">
               <div class="bar beginner"></div>
@@ -286,8 +284,8 @@
             <p>Beginner</p>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-star"></i></div>
+          <div class="skill-card" data-category="technical">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
             <h4>JavaScript</h4>
             <div class="skill-level">
               <div class="bar intermediate"></div>
@@ -295,7 +293,7 @@
             <p>Intermediate</p>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card" data-category="technical">
             <div class="skill-icon"><i class="fas fa-database"></i></div>
             <h4>MySQL</h4>
             <div class="skill-level">
@@ -304,8 +302,8 @@
             <p>Intermediate</p>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <div class="skill-card" data-category="technical">
+            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
             <h4>Node.js</h4>
             <div class="skill-level">
               <div class="bar intermediate"></div>
@@ -313,8 +311,8 @@
             <p>Intermediate</p>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <div class="skill-card" data-category="technical">
+            <div class="skill-icon"><i class="fab fa-python"></i></div>
             <h4>Python</h4>
             <div class="skill-level">
               <div class="bar intermediate"></div>
@@ -322,13 +320,60 @@
             <p>Intermediate</p>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-star"></i></div>
+          <div class="skill-card" data-category="technical">
+            <div class="skill-icon"><i class="fab fa-react"></i></div>
             <h4>React.js</h4>
             <div class="skill-level">
               <div class="bar intermediate"></div>
             </div>
             <p>Intermediate</p>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-card" data-category="soft">
+            <div class="skill-icon"><i class="fas fa-users"></i></div>
+            <h4>Teamwork</h4>
+            <div class="skill-level">
+              <div class="bar advanced"></div>
+            </div>
+            <p>Advanced</p>
+          </div>
+
+          <div class="skill-card" data-category="soft">
+            <div class="skill-icon"><i class="fas fa-comments"></i></div>
+            <h4>Communication</h4>
+            <div class="skill-level">
+              <div class="bar advanced"></div>
+            </div>
+            <p>Advanced</p>
+          </div>
+
+          <div class="skill-card" data-category="soft">
+            <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+            <h4>Problem Solving</h4>
+            <div class="skill-level">
+              <div class="bar advanced"></div>
+            </div>
+            <p>Advanced</p>
+          </div>
+
+          <!-- Language Skills -->
+          <div class="skill-card" data-category="language">
+            <div class="skill-icon"><i class="fas fa-language"></i></div>
+            <h4>English</h4>
+            <div class="skill-level">
+              <div class="bar advanced"></div>
+            </div>
+            <p>Fluent</p>
+          </div>
+
+          <div class="skill-card" data-category="language">
+            <div class="skill-icon"><i class="fas fa-language"></i></div>
+            <h4>Hindi</h4>
+            <div class="skill-level">
+              <div class="bar advanced"></div>
+            </div>
+            <p>Native</p>
           </div>
         </div>
       </div>
@@ -520,24 +565,15 @@
       <!-- Lightbox Modal -->
       <div id="imageModal" class="modal">
         <span class="close-modal">&times;</span>
-        <div class="modal-container">
-          <div class="modal-image-container">
-            <img id="modalImage" src="" alt="" />
-          </div>
-          <div class="modal-description">
-            <h3 id="modalTitle"></h3>
-            <p id="modalDesc"></p>
-          </div>
+        <div class="modal-image-container">
+          <img id="modalImage" src="" alt="" />
         </div>
       </div>
     </section>
 
-    
-
     <!-- References Section -->
     <section id="references" class="references-section">
       <h2 class="section-title">References</h2>
-
 
       <div class="references-container">
         <!-- Reference Card 1 -->
@@ -584,14 +620,9 @@
       </div>
     </section>
 
-
-
     <footer>
       <div class="container">
-        <p class="copyright">
-          &copy; 2025 Bafu All
-          rights reserved.
-        </p>
+        <p class="copyright">&copy; 2025 Bafu All rights reserved.</p>
         <div class="footer-social">
           <a
             href="https://linkedin.com/in/yourusername"
@@ -714,26 +745,21 @@
         });
       });
 
+      // <!-- Lightbox Modal -->
       document.addEventListener("DOMContentLoaded", function () {
         const viewLinks = document.querySelectorAll(".view-full-size");
         const modal = document.getElementById("imageModal");
         const modalImg = document.getElementById("modalImage");
-        const modalTitle = document.getElementById("modalTitle");
-        const modalDesc = document.getElementById("modalDesc");
         const closeModal = document.querySelector(".close-modal");
 
         viewLinks.forEach((link) => {
           link.addEventListener("click", function (e) {
             e.preventDefault();
-
             const imgSrc = this.getAttribute("data-img");
             const title = this.getAttribute("data-title");
-            const desc = this.getAttribute("data-desc");
 
             modalImg.src = imgSrc;
             modalImg.alt = title;
-            modalTitle.textContent = title;
-            modalDesc.textContent = desc;
 
             modal.style.display = "block";
             document.body.style.overflow = "hidden";
@@ -757,6 +783,35 @@
             modal.style.display = "none";
             document.body.style.overflow = "auto";
           }
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabButtons = document.querySelectorAll(".tab-button");
+        const skillCards = document.querySelectorAll(".skill-card");
+
+        // Add click event to each tab button
+        tabButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            // Remove active class from all buttons
+            tabButtons.forEach((btn) => btn.classList.remove("active"));
+            // Add active class to clicked button
+            button.classList.add("active");
+
+            const filterValue = button.getAttribute("data-filter");
+
+            // Filter skills
+            skillCards.forEach((card) => {
+              if (
+                filterValue === "all" ||
+                card.getAttribute("data-category") === filterValue
+              ) {
+                card.style.display = "flex"; // or whatever your card display should be
+              } else {
+                card.style.display = "none";
+              }
+            });
+          });
         });
       });
     </script>
