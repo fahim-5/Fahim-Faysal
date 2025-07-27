@@ -12,25 +12,33 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <header class="header">
-      <div class="container">
-        <div class="logo">
-          <h1>Fahim Faysal</h1>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#pictures">Pictures</a></li>
-            <li><a href="#references">References</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <!-- Navigation Bar -->
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <h1>fahim</h1>
+    </div>
+
+    <div class="mobile-bar" id="mobileBar">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <nav>
+      <ul id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#pictures">Pictures</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
     <section id="home" class="hero">
       <div class="container">
@@ -400,10 +408,14 @@
               police station for action
             </p>
             <div class="project-links">
-              <a href="https://crime-reporting-webapp.netlify.app/login.html" target="_blank"
+              <a
+                href="https://crime-reporting-webapp.netlify.app/login.html"
+                target="_blank"
                 >Live Demo <i class="fa-solid fa-up-right-from-square"></i
               ></a>
-              <a href="https://github.com/fahim-5/Crime-rescue-Team.git" target="_blank"
+              <a
+                href="https://github.com/fahim-5/Crime-rescue-Team.git"
+                target="_blank"
                 >Source Code <i class="fa-solid fa-code"></i
               ></a>
             </div>
@@ -455,15 +467,18 @@
             <h3>Personal Portfolio</h3>
             <p>
               Designed and developed a fully responsive personal portfolio using
-              HTML, Vanilla CSS, and JavaScript to showcase my skills, projects, and
-              academic background. Implemented smooth navigation, interactive
-              sections, and a modern UI to reflect my professional identity.
+              HTML, Vanilla CSS, and JavaScript to showcase my skills, projects,
+              and academic background. Implemented smooth navigation,
+              interactive sections, and a modern UI to reflect my professional
+              identity.
             </p>
             <div class="project-links">
               <a href="#" target="_blank"
                 >Live Demo <i class="fa-solid fa-up-right-from-square"></i
               ></a>
-              <a href="https://github.com/fahim-5/Fahim-Faysal.git" target="_blank"
+              <a
+                href="https://github.com/fahim-5/Fahim-Faysal.git"
+                target="_blank"
                 >Source Code <i class="fa-solid fa-code"></i
               ></a>
             </div>
@@ -635,10 +650,7 @@
             target="_blank"
             ><i class="fab fa-github"></i
           ></a>
-          <a
-            href="https://x.com/bafu_44"
-            class="social-icon"
-            target="_blank"
+          <a href="https://x.com/bafu_44" class="social-icon" target="_blank"
             ><i class="fab fa-twitter"></i
           ></a>
           <a
@@ -673,6 +685,37 @@
     </div>
     <!-- Smooth Scrolling Script -->
     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  const mobileBar = document.getElementById('mobileBar');
+  const navLinks = document.getElementById('navLinks');
+  const navItems = document.querySelectorAll('#navLinks li a');
+
+  // Toggle mobile menu
+  mobileBar.addEventListener('click', function() {
+    this.classList.toggle('active');
+    navLinks.classList.toggle('show');
+    document.body.classList.toggle('no-scroll');
+  });
+
+  // Close menu when clicking a nav item
+  navItems.forEach(item => {
+    item.addEventListener('click', function() {
+      mobileBar.classList.remove('active');
+      navLinks.classList.remove('show');
+      document.body.classList.remove('no-scroll');
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.mobile-bar') && !e.target.closest('nav ul')) {
+      mobileBar.classList.remove('active');
+      navLinks.classList.remove('show');
+      document.body.classList.remove('no-scroll');
+    }
+  });
+});
+
       document.addEventListener("DOMContentLoaded", function () {
         // Smooth scrolling for navigation links
         document.querySelectorAll(".nav-links a").forEach((anchor) => {
