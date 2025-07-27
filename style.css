@@ -1877,7 +1877,7 @@ body {
 
   .photography-section h2::after {
     margin: 10px auto 0;
-    margin-left: 8px;
+    margin-left: 15px;
   }
 
   /* Card Container */
@@ -1986,6 +1986,30 @@ body {
   color: #00bcd4;
 }
   
+
+
+
+@media (max-width: 768px) {
+  .modal-image-container {
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 75%;
+    padding: 10px;
+  }
+
+  .close-modal {
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+  }
+
+  .modal-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
 
 /* References Section */
 
@@ -2115,7 +2139,7 @@ body {
   }
 
   .section-title::after {
-    margin: 14px auto 0;
+    margin-left: 12px;
   }
 
   .references-container {
