@@ -40,7 +40,6 @@ html, body {
     top: 0;
     width: 100%;
     background-color: rgb(13, 13, 26);
-
     padding: 15px 0;
     z-index: 1000;
     border-bottom: 1px solid var(--border-color);
@@ -478,7 +477,7 @@ html, body {
   .hero {
     flex-direction: column;
     padding-top: 100px;
-    padding-bottom: 60px;
+    padding-bottom: 5px;
   }
 
   .heroContent {
@@ -651,7 +650,7 @@ html, body {
   
   .about-section {
     padding: 110px 0;
-    background-color: rgba(15, 15, 25, 0.3);
+    background-color:#0a0c14;
     border-bottom: 1px solid var(--border-color);
     position: relative;
     width: 100%;
@@ -814,12 +813,14 @@ html, body {
     align-items: center;
     padding: 0 20px;
     gap: 40px;
+    padding-top: 50px;
     
   }
 
 
   .about-section {
-  padding: 50px 0;
+  padding: 10px 0;
+  padding-top: 50px;
 }
 
   .about-left {
@@ -1035,15 +1036,17 @@ html, body {
   .education-container{
     padding-top: 10px;
     padding-bottom: 15px;
+
   }
 
   .education-section {
-    padding-top: 5px;
+    padding-top: 75px;
+    padding-bottom: 8px;
   }
   
   .section-title {
     font-size: 24px;
-    margin-left: 10 px;
+    margin-left: 10px;
     text-align: center;
   }
 
@@ -1230,6 +1233,8 @@ html, body {
 
   .experience-container {
     padding: 0 20px;
+    padding-top: 60px;
+    padding-bottom: 8px;
   }
 
   .section-title {
@@ -1554,6 +1559,8 @@ body {
   }
   .skills-container {
     padding: 0 20px;
+    padding-bottom: 8px;
+    padding-top: 50px;
   }
 
   .section-title {
@@ -1763,6 +1770,7 @@ body {
 @media (max-width: 576px) {
   .portfolio-section {
     padding: 40px 20px;
+    padding-top: 90px;
   }
 
   .portfolio-section h2 {
@@ -1928,6 +1936,7 @@ body {
   /* Section Padding & Title */
   .photography-section {
     padding: 40px 16px;
+    padding-top: 90px;
   }
 
   .photography-section h2 {
@@ -2189,6 +2198,7 @@ body {
   .references-section {
     padding: 30px 15px 40px;
     text-align: center;
+    padding-top: 90px;
   }
 
   .section-title {
