@@ -869,7 +869,7 @@ html, body {
     height: 4px;
     background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
     border-radius: 2px;
-    
+
   }
   
   .education-grid {
@@ -993,12 +993,15 @@ html, body {
   
   .section-title {
     font-size: 24px;
-    margin-left: 10px;
+    margin-left: 10 px;
     text-align: center;
   }
 
-  .section-title::after {
-    display: none;
+  .section-title::after{
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    width: 30px;
   }
 
   .education-grid {
@@ -1167,6 +1170,90 @@ html, body {
 }
 
 
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 50px 0;
+    background: rgba(15, 15, 25, 0.85); /* Slightly darker for better mobile readability */
+  }
+
+  .experience-container {
+    padding: 0 20px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block; /* Full width for mobile */
+    letter-spacing: 0.3px;
+  }
+
+  .section-title::after {
+    left: 15%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    width: 40px;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 5px;
+  }
+
+  .experience-card {
+    padding: 24px 20px;
+    margin-top: 0;
+    border-radius: 14px;
+  }
+
+  .experience-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .experience-card .org {
+    font-size: 1rem;
+  }
+
+  .experience-card .duration,
+  .experience-card .exp-description {
+    font-size: 0.95rem;
+  }
+
+  /* Adjust hover effects for mobile */
+  .experience-card:hover {
+    transform: none;
+    box-shadow: 0 8px 24px 0 var(--shadow-color);
+  }
+
+  .experience-card:hover::after {
+    width: 0; /* Disable on mobile or keep subtle */
+  }
+}
+
+/* Extra small devices (phones under 400px) */
+@media (max-width: 400px) {
+  .experience-section {
+    padding: 40px 0;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .experience-card {
+    padding: 20px 16px;
+  }
+
+  .experience-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .experience-card .exp-description {
+    line-height: 1.6;
+  }
+}
 
 
 
@@ -1418,7 +1505,10 @@ body {
   }
 
   .section-title::after {
-    margin: 8px auto 0;
+    left: 10%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    width: 40px;
   }
 
   .section-subtitle {
@@ -1489,7 +1579,7 @@ body {
   display: block;
   width: 60px;
   height: 3px;
-  background: #00bcd4;
+  background:#4a6bff;
   margin-top: 10px;
   border-radius: 2px;
 }
@@ -1619,10 +1709,13 @@ body {
   .portfolio-section h2 {
     font-size: 1.6rem;
     text-align: center;
+    margin-left: 6px;
   }
 
   .portfolio-section h2::after {
-    margin: 10px auto 0;
+    margin: 2px auto 0;
+    background: #4a6bff;
+    margin-left: 14px;
   }
 
   .portfolio-cards {
@@ -1688,7 +1781,7 @@ body {
     display: block;
     width: 60px;
     height: 3px;
-    background: #00bcd4;
+    background: #4a6bff;
     margin-top: 10px;
     border-radius: 2px;
   }
@@ -1784,6 +1877,7 @@ body {
 
   .photography-section h2::after {
     margin: 10px auto 0;
+    margin-left: 8px;
   }
 
   /* Card Container */
@@ -2122,8 +2216,9 @@ body {
 
 @media (max-width: 576px) {
   footer {
-    padding: 12px 0;
+    padding: 7px 0;
     text-align: center;
+    
   }
 
   footer .container {
@@ -2138,9 +2233,7 @@ body {
   }
 
   .social-icon {
-    width: 36px;
-    height: 36px;
-    font-size: 16px;
+    display: none;
   }
 
   .admin-link {
