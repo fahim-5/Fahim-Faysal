@@ -465,10 +465,12 @@ html, body {
 
   .statItem h3 {
     font-size: 28px;
+    
   }
 
   .statItem p {
     font-size: 11px;
+
   }
 
   .btn {
@@ -762,7 +764,13 @@ html, body {
     align-items: center;
     padding: 0 20px;
     gap: 40px;
+    
   }
+
+
+  .about-section {
+  padding: 50px 0;
+}
 
   .about-left {
     flex: 1;
@@ -774,6 +782,7 @@ html, body {
     height: 220px;
     max-width: 100%;
     margin-bottom: 20px;
+    margin-top: 0px;
   }
 
   .about-socials {
@@ -837,6 +846,8 @@ html, body {
     padding: 0 10px;
     position: relative;
     z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   
   .section-title {
@@ -846,6 +857,7 @@ html, body {
     color: var(--text-color);
     display: inline-block;
     margin-left: 10px;
+    
   }
   
   .section-title::after {
@@ -857,6 +869,7 @@ html, body {
     height: 4px;
     background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
     border-radius: 2px;
+    
   }
   
   .education-grid {
@@ -968,15 +981,24 @@ html, body {
   
 
 @media (max-width: 576px) {
+
+  .education-container{
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  .education-section {
+    padding-top: 5px;
+  }
+  
   .section-title {
     font-size: 24px;
-    margin-left: 0;
+    margin-left: 10px;
     text-align: center;
   }
 
   .section-title::after {
-    left: 50%;
-    transform: translateX(-50%);
+    display: none;
   }
 
   .education-grid {
