@@ -11,7 +11,7 @@
     --border-color: rgba(255, 255, 255, 0.08);
   }
   
-  
+
   * {
     margin: 0;
     padding: 0;
@@ -56,6 +56,7 @@ html, body {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 30px;
+    
   }
   
   .logo h1 {
@@ -121,6 +122,7 @@ html, body {
     flex-direction: column;
     gap: 20px;
     padding: 0 20px;
+    height: 50px;
   }
 
   .logo h1 {
@@ -209,6 +211,7 @@ html, body {
     padding: 0 40px;
     position: relative;
     z-index: 1;
+
   }
   
   .heroContent {
@@ -233,6 +236,7 @@ html, body {
     margin-bottom: 24px;
     position: relative;
     padding-left: 40px;
+    margin-top: 40px;
   }
   
   .intro h2::before {
@@ -411,6 +415,11 @@ html, body {
     75% { transform: translateY(-25px) translateX(15px) rotate(5deg); }
   }
   
+
+
+
+
+  
   
 @media (max-width: 576px) {
   .hero {
@@ -432,7 +441,8 @@ html, body {
 
   .intro h2 {
     font-size: 14px;
-    padding-left: 30px;
+    padding-left: 5px;
+    margin-top: 10px;
   }
 
   .intro h2::before {
