@@ -68,6 +68,11 @@ html, body {
     margin: 0;
   }
   
+  .logo a {
+  text-decoration: none;
+  
+}
+
   
   nav ul {
     display: flex;
