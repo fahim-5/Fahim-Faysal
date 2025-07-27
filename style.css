@@ -1056,6 +1056,8 @@ html, body {
 
 .experience-section {
   padding: 80px 0;
+  padding-left: 150px;
+  padding-top: 110px;
   border-bottom: 1px solid var(--border-color);
   width: 100%;
   background: rgba(15, 15, 25, 0.7);
@@ -1064,7 +1066,6 @@ html, body {
 .experience-container {
   width: 100%;
   max-width: 1200px;
-
   padding: 0 30px;
   position: relative;
   z-index: 1;
@@ -1282,6 +1283,7 @@ body {
 
 .skills-section {
   padding: 80px 0;
+  padding-top: 110px;
   border-bottom: 1px solid var(--border-color);
   position: relative;
   width: 100%;
@@ -1495,6 +1497,11 @@ body {
 
 
 @media (max-width: 576px) {
+
+  .skills-section {
+    padding: 50px 0;
+    
+  }
   .skills-container {
     padding: 0 20px;
   }
@@ -1564,14 +1571,16 @@ body {
 /* Portfolio Section */
 .portfolio-section {
   padding: 60px 40px;
+  padding-top: 110px;
   background-color: #030614;
 }
 
 .portfolio-section h2 {
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   color: #fff;
   position: relative;
+
 }
 
 .portfolio-section h2::after {
@@ -1767,11 +1776,12 @@ body {
   /* Photography Section */
   .photography-section {
     padding: 60px 40px;
+    padding-top: 110px;
   }
   
   .photography-section h2 {
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     color: #fff;
     position: relative;
   }
@@ -2208,15 +2218,15 @@ body {
   }
   
   .social-icon {
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--text-color);
-    font-size: 13px;
+    font-size: 8px;
     transition: all 0.3s ease-in-out;
   }
   
