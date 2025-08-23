@@ -411,6 +411,11 @@ html, body {
   .btn2:hover {
     transform: translateY(-5px) scale(1.03);
   }
+
+  a .btn2 {
+  text-decoration: none;
+}
+
   
   /* Hero image - moved to right side */
   .heroImage {
