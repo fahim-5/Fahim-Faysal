@@ -13,32 +13,32 @@
   <body>
     <!-- Navigation Bar -->
     <!-- Navigation Bar -->
-<header class="header">
-  <div class="container">
-    <div class="logo">
-      <h1><a href="#home">fahim</a></h1>
-    </div>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <h1><a href="#home">fahim</a></h1>
+        </div>
 
-    <div class="mobile-bar" id="mobileBar">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
+        <div class="mobile-bar" id="mobileBar">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
 
-    <nav>
-      <ul id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#pictures">Pictures</a></li>
-        <li><a href="#references">References</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+        <nav>
+          <ul id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pictures">Pictures</a></li>
+            <li><a href="#references">References</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <section id="home" class="hero">
       <div class="container">
@@ -71,6 +71,9 @@
               </div>
             </div>
 
+            <a href="assets/Fahim Faysal.pdf" download>
+              <button class="btn2">View my CV</button>
+            </a>
             <button class="btn">Get In Touch</button>
           </div>
 
@@ -685,36 +688,36 @@
     </div>
     <!-- Smooth Scrolling Script -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-  const mobileBar = document.getElementById('mobileBar');
-  const navLinks = document.getElementById('navLinks');
-  const navItems = document.querySelectorAll('#navLinks li a');
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileBar = document.getElementById("mobileBar");
+        const navLinks = document.getElementById("navLinks");
+        const navItems = document.querySelectorAll("#navLinks li a");
 
-  // Toggle mobile menu
-  mobileBar.addEventListener('click', function() {
-    this.classList.toggle('active');
-    navLinks.classList.toggle('show');
-    document.body.classList.toggle('no-scroll');
-  });
+        // Toggle mobile menu
+        mobileBar.addEventListener("click", function () {
+          this.classList.toggle("active");
+          navLinks.classList.toggle("show");
+          document.body.classList.toggle("no-scroll");
+        });
 
-  // Close menu when clicking a nav item
-  navItems.forEach(item => {
-    item.addEventListener('click', function() {
-      mobileBar.classList.remove('active');
-      navLinks.classList.remove('show');
-      document.body.classList.remove('no-scroll');
-    });
-  });
+        // Close menu when clicking a nav item
+        navItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            mobileBar.classList.remove("active");
+            navLinks.classList.remove("show");
+            document.body.classList.remove("no-scroll");
+          });
+        });
 
-  // Close menu when clicking outside
-  document.addEventListener('click', function(e) {
-    if (!e.target.closest('.mobile-bar') && !e.target.closest('nav ul')) {
-      mobileBar.classList.remove('active');
-      navLinks.classList.remove('show');
-      document.body.classList.remove('no-scroll');
-    }
-  });
-});
+        // Close menu when clicking outside
+        document.addEventListener("click", function (e) {
+          if (!e.target.closest(".mobile-bar") && !e.target.closest("nav ul")) {
+            mobileBar.classList.remove("active");
+            navLinks.classList.remove("show");
+            document.body.classList.remove("no-scroll");
+          }
+        });
+      });
 
       document.addEventListener("DOMContentLoaded", function () {
         // Smooth scrolling for navigation links
